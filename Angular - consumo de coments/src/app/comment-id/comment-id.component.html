@@ -1,0 +1,7 @@
+<input type="number" id="textCommentId" [(ngModel)]="id">
+
+
+
+<button (click)="findById()">Clique Aqui!</button>
+
+<br> Post Id: <label *ngIf="comment.postId != 0 "> {{comment.postId}}</label><br> Id: <label *ngIf="comment.id != 0">{{comment.id}}</label> <br> Name: {{comment.name}} <br> Email: {{comment.email}} <br> Body: {{comment.body}}
